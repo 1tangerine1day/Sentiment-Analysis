@@ -1,7 +1,7 @@
 
 # Sentiment Analysis
-* bert
-* xlnet
+* bert : https://github.com/1tangerine1day/XLNet-Sentiment-Analysis#BERT
+* xlnet : https://github.com/1tangerine1day/XLNet-Sentiment-Analysis#XLnet
 
 ## BERT
 ### introduction
@@ -288,7 +288,7 @@
 * Higher recall means less false negatives.
 ---
 
-## xlnet
+## XLnet
 ### introduction
 * transformer-xl : https://arxiv.org/pdf/1901.02860.pdf
 
