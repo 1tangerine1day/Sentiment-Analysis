@@ -5,11 +5,11 @@
 * RoBerta: https://hackmd.io/@h5v7rKYIT4GGOr9b0g0k7g/H1osvVOnv
 ## Dataset
 * amazon clawer <br>
-![image](https://i.imgur.com/8Hf4WI3.png =300x200)
+![image](https://i.imgur.com/8Hf4WI3.png)
 * sst5 : https://github.com/prrao87/fine-grained-sentiment/tree/master/data/sst  <br>
-![image](https://i.imgur.com/fkzNk52.png =300x200)
+![image](https://i.imgur.com/fkzNk52.png)
 * amazon 5 Electronics (to balance data): https://jmcauley.ucsd.edu/data/amazon/  <br>
-![image](https://i.imgur.com/Q1NYgba.png =300x200)
+![image](https://i.imgur.com/Q1NYgba.png)
 
 ## Performance
 
