@@ -4,28 +4,27 @@ import numpy as np
 import torch
 
 class dataset(Dataset):
-    def __init__(self, path, tokenizer, cls_token):
+    def __init__(self, path, tokenizer):
         self.tokenizer = tokenizer
-        self.cls = cls_token
         self.name = path
         self.read_csv(path)
      
 
     def __getitem__(self, idx):
-        label, text = self.df.iloc[idx, :3].values
+        label, text = self.df.iloc[idx, :2].values
         
         label_tensor = torch.tensor(label)
 
-        word_pieces = [self.cls]
+        word_pieces = [self.tokenizer.cls_token]
         tokens = self.tokenizer.tokenize(text)
         if len(tokens) > 500:
             tokens = tokens[:200] + tokens[-300:]
         word_pieces += tokens
         
         ids = self.tokenizer.convert_tokens_to_ids(word_pieces)
-        tokens_tensor = torch.tensor(ids)
+        ids_tensor = torch.tensor(ids)
             
-        return tokens_tensor, label_tensor
+        return ids_tensor, label_tensor
     
     def __len__(self):
         return len(self.df)
@@ -48,5 +47,8 @@ class dataset(Dataset):
 
     def get_len(self):
         return len(self.df)
+    
+    def get_name(self):
+        return(self.name.split('/')[-1])
 
     

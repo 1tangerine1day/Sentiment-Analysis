@@ -18,9 +18,10 @@ class xlnet_classifier(nn.Module):
     def forward(self, input_ids, attention_mask=None):
         
         last_hidden_states  = self.xlnet(input_ids=input_ids, attention_mask=attention_mask)[0]
-        pooled_output = self.pool_hidden_state(last_hidden_states)
+        pooled_output = torch.mean(last_hidden_states, 1)
         drop_output = self.drop(pooled_output)
         linear_output = self.out(drop_output)
+        
         return linear_output
 
     def get_num_class(self):
@@ -28,10 +29,6 @@ class xlnet_classifier(nn.Module):
 
     def get_pretrain_model_name(self):
         return self.pretrain_model
-
-    def pool_hidden_state(self, last_hidden_state):
-        mean_last_hidden_state = torch.mean(last_hidden_state, 1)
-        return mean_last_hidden_state
     
     def get_tokenizer(self):
         return self.tokenizer
