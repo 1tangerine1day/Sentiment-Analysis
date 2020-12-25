@@ -31,9 +31,9 @@ D: `The first half is outstanding. Lupita Nyongo is excellent as always -- shes 
 |                | A        | B        | C        | C        |
 | --------       | -------- | -------- | -------- | -------- |
 | BERT           | 0        | 2        | 0        |2         |
-| XLNet          | 1/0      | 2        | 1        |1         |
+| XLNet          | 1        | 2        | 1        |1         |
 | RoBERTa(sum)   | 1        | 1        | 0        |2         |
-| RoBERTa(pool)  | 1        | 1        | 0        |1/2       |
+| RoBERTa(pool)  | 1        | 1        | 0        |1         |
 
 * class:<br>
 0-> 1、2 (stars)<br>
