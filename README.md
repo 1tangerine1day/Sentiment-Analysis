@@ -22,11 +22,10 @@
 
 ## case study
 
-A: `Not as extreme as touted.` (3/5)
-B: `IT WAS DIFFERENT TYPE MOVIE BUT IT WAS GOOD. SUSPENSEFUL.` (5/5)
-C: `Not impressed with this movie, too many unknown variables.` (1/5)
-D: `The first half is outstanding. Lupita Nyongo is excellent as always -- shes a moody complex character which makes complete sense after the big reveal.Once that big reveal happens, suspending disbelief is difficult, even for a horror movie. It is almost as if they came up with the main premise, than spit-balled an explanation. The explanation / back story is so absurd it requires way too much exposition. Heres hoping Peele gets more grounded in his third act.` (3/5)
-<!-- E: Not impressed with this movie, but the actors performance well. -->
+* A: `Not as extreme as touted.` (3/5)
+* B: `IT WAS DIFFERENT TYPE MOVIE BUT IT WAS GOOD. SUSPENSEFUL.` (5/5)
+* C: `Not impressed with this movie, too many unknown variables.` (1/5)
+* D: `The first half is outstanding. Lupita Nyongo is excellent as always -- shes a moody complex character which makes complete sense after the big reveal.Once that big reveal happens, suspending disbelief is difficult, even for a horror movie. It is almost as if they came up with the main premise, than spit-balled an explanation. The explanation / back story is so absurd it requires way too much exposition. Heres hoping Peele gets more grounded in his third act.` (3/5)
 
 |                | A        | B        | C        | D        |
 | --------       | -------- | -------- | -------- | -------- |
@@ -40,7 +39,3 @@ D: `The first half is outstanding. Lupita Nyongo is excellent as always -- shes 
     * 1-> 3 (stars)
     * 2-> 4、5 (stars)
 
-## improve
-* use "large" model not "base"
-* Aspect-Based Sentiment Analysis
-* more data ?
